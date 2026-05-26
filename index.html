@@ -442,6 +442,12 @@
       padding-right: 2.5rem;
     }
 
+    .form-select option {
+      background: #1a1a1a;
+      color: #f8f7f5;
+      padding: 0.5rem;
+    }
+
     .form-submit {
       grid-column: 1 / -1;
       background: var(--color-red);
@@ -793,6 +799,7 @@
       </div>
 
       <form class="form-grid" action="https://formspree.io/f/mwvzrwpg" method="POST">
+        <input type="hidden" name="_next" value="https://www.strata-risk.com/thank-you.html">
         <input class="form-input" type="text" name="name" placeholder="Name" required>
         <input class="form-input" type="text" name="organization" placeholder="Organization">
         <input class="form-input form-full" type="email" name="email" placeholder="Email" required>
